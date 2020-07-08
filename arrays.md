@@ -45,12 +45,15 @@ Related:
  - single-segment vs. contiguous vs. C-contiguous/F-contiguous
    * Examples of *single-segment* arrays that are neither C or F 
      contiguous (higher dims)
+     - Corollary: high dimensional arrays that are *both* C and F contiguous?
+       * Yes! dims == 1 (sort of a trick question)
    * Can create non-contiguous arrays with views (`[::2]`)
    * Statement whose truth value needs to be confirmed, but is a useful 
      distillation of some of the terminology into a more concrete example:
     
      > In NumPy, it is not possible to construct a **non-single-segment** 
      > array that is not a **view** of a single-segment array.
+ - Terminological aside: memory *contiguity* vs. memory *alignment*
 
 ### Views
 
